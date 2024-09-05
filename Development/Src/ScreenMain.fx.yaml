@@ -71,3 +71,13 @@ ScreenMain As screen:
             Y: =108
             ZIndex: =3
 
+    LabelWish As label:
+        Align: =Align.Center
+        Height: =118
+        Size: =30
+        Text: ="Hello " & User().FullName & " - Good Morning"
+        Width: =692
+        X: =337
+        Y: =118
+        ZIndex: =6
+
