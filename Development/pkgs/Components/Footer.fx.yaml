@@ -1,0 +1,26 @@
+Footer As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =86
+    Width: =App.ActiveScreen.Width
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    rect_footer_back As rectangle:
+        Fill: =RGBA(50, 49, 4, 1)
+        Height: =86
+        Width: =App.ActiveScreen.Width
+        Y: =App.ActiveScreen.Height - Self.Height
+        ZIndex: =1
+
+    Footer_Label As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =86
+        Size: =21
+        Text: ="Copyright @ Sharath M"
+        Width: =App.ActiveScreen.Width
+        Y: =App.ActiveScreen.Height - Self.Height
+        ZIndex: =2
+

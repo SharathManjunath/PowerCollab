@@ -1,0 +1,73 @@
+ScreenMain As screen:
+    OnVisible: |-
+        =ClearCollect(
+                     myColleagues, 
+                     Filter(
+                             Office365Users.DirectReports(Office365Users.Manager(User().Email).Mail),
+                             AccountEnabled = true && ThisRecord.Mail <> User().Email
+                     )
+        )
+
+    Header_1 As Header:
+        Fill: =RGBA(51, 52 ,74, 1)
+        HeaderImage: ='coforge logo'
+        HeaderPageInfo: =NavBar_1.ChosenTab
+        HeaderText: ="IT"
+
+    Footer_1 As Footer:
+        Fill: =RGBA(51, 52 ,74, 1)
+        Y: =682
+        ZIndex: =2
+
+    NavBar_1 As NavBar:
+        CurrentIndicatorColor: =If(App.ActiveScreen=ScreenMain,ColorFade(RGBA(29,161,242,1),70%),Color.Transparent)
+        Default: ="Home"
+        Height: =682
+        HoverFill: =If(App.ActiveScreen=ScreenMain,RGBA(255,255,255,10%),Color.Transparent)
+        NavMenuItems: |-
+            =Table(
+                {Value: "Home", Icon: Icon.Home, Screen: ScreenMain},
+                {Value: "Colleague", Icon: Icon.Help, Screen: ScreenColleagues}
+             )
+        SelectedFill: =If(App.ActiveScreen=ScreenMain,RGBA(255,255,255,10%),Color.Transparent)
+        Y: =86
+        ZIndex: =3
+
+    ContainerUser As groupContainer.manualLayoutContainer:
+        BorderThickness: =1
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        X: =433
+        Y: =268
+        ZIndex: =5
+
+        UserImage As image:
+            Image: =User().Image
+            X: =74
+            Y: =54
+            ZIndex: =1
+
+        Lbl_UserName As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =36
+            Size: =20
+            Text: =User().FullName
+            Width: =251
+            X: =198
+            Y: =54
+            ZIndex: =2
+
+        Lbl_Position As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Semibold
+            Height: =43
+            Size: =15
+            Text: =Office365Users.MyProfile().JobTitle
+            Width: =266
+            X: =198
+            Y: =108
+            ZIndex: =3
+

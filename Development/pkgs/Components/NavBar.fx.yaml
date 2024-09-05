@@ -1,0 +1,79 @@
+NavBar As CanvasComponent:
+    ChosenTab: ='NavBar Gallary'.Selected.Value
+    Color: =Color.White
+    CurrentIndicatorColor: =ColorFade(RGBA(29,161,242,1),70%)
+    Default: =
+    Fill: =RGBA(51, 52 ,74, 1)
+    Height: =700
+    HoverFill: =RGBA(255,255,255,10%)
+    NavMenuItems: |-
+        =Table(
+            {Value: "Item 1", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Item 2", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Item 3", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Item 4", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Item 5", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Item 6", Icon: Icon.Waypoint, Screen: App.ActiveScreen}
+         )
+    SelectedFill: =RGBA(255,255,255,10%)
+    Width: |
+        =80
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    "'NavBar Gallary' As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
+        Default: =LookUp(NavBar.NavMenuItems,Screen = App.ActiveScreen)
+        DelayItemLoading: =true
+        Height: =Parent.Height
+        Items: =NavBar.NavMenuItems
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =Navigate(ThisItem.Screen)
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =Parent.Height/8.5
+        Width: =80
+        ZIndex: =1
+
+        NavBar_Icon As icon.Diamond:
+            Color: =NavBar.Color
+            Height: =35
+            Icon: =ThisItem.Icon
+            Width: =35
+            X: =(Parent.TemplateWidth-Self.Width)/2
+            Y: |
+                =15
+            ZIndex: =1
+
+        Navbar_label As label:
+            Align: =Align.Center
+            Color: =NavBar.Color
+            Height: =25
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.Value
+            Width: =Parent.TemplateWidth
+            Y: =50
+            ZIndex: =2
+
+        Navbar_Current As label:
+            Fill: =NavBar.CurrentIndicatorColor
+            Height: =Parent.TemplateHeight
+            Size: =21
+            Text: =ThisItem.Icon
+            Visible: =ThisItem.Value = 'NavBar Gallary'.Selected.Value
+            Width: =5
+            ZIndex: =3
+
+        Navbar_Overlay As label:
+            Fill: =If(ThisItem.Value = 'NavBar Gallary'.Selected.Value, NavBar.SelectedFill, Color.Transparent)
+            Height: =75.29411764705883
+            HoverFill: =NavBar.HoverFill
+            OnSelect: =Navigate(ThisItem.Screen)
+            PressedFill: =If(ThisItem.Value = 'NavBar Gallary'.Selected.Value, NavBar.SelectedFill, Color.Transparent)
+            Size: =21
+            Text: =
+            Width: =80
+            ZIndex: =4
+

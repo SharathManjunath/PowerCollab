@@ -1,0 +1,32 @@
+[
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 2,
+    "LibraryId": "d6a0463e-a8c1-459d-8f28-1cc3c8f9783a",
+    "LibraryLogicalName": "cre86_leftnavigationmenu_caeaa",
+    "LibraryVersion": "2024-06-26T07:02:34Z",
+    "OriginalComponentDefinitionTemplateId": "b2f5d983a42347e3b5a0c3fe3ee62f47",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2024-06-26T07:02:35.832+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 2,
+    "LibraryId": "c74e653b-40ee-4620-88e9-a321fd2fb1cd",
+    "LibraryLogicalName": "cre86_headerandfootercomponentlibrary_7be93",
+    "LibraryVersion": "2024-06-11T07:20:43Z",
+    "OriginalComponentDefinitionTemplateId": "909e1b1e46294208b52fbd00ccfb6036",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2024-06-11T07:20:44.504+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 2,
+    "LibraryId": "c74e653b-40ee-4620-88e9-a321fd2fb1cd",
+    "LibraryLogicalName": "cre86_headerandfootercomponentlibrary_7be93",
+    "LibraryVersion": "2024-06-11T07:20:43Z",
+    "OriginalComponentDefinitionTemplateId": "9d2c9b4cec3d4b298f2e45dacee29a6d",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2024-06-11T07:20:44.504+00:00"
+  }
+]
