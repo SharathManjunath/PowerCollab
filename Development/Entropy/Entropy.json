@@ -14,16 +14,16 @@
   "ControlUniqueIds": {
     "App": 1,
     "ContainerUser": 25,
-    "Footer": 4,
+    "Footer": 11,
     "Footer_1": 29,
     "Footer_2": 38,
-    "Footer_Label": 6,
+    "Footer_Label": 13,
     "GalleryCollab": 33,
-    "galleryTemplate1": 16,
+    "galleryTemplate1": 6,
     "galleryTemplate2": 34,
-    "head_Image": 9,
-    "head_Label": 10,
-    "Header": 7,
+    "head_Image": 16,
+    "head_Label": 17,
+    "Header": 14,
     "Header_1": 22,
     "Header_2": 31,
     "Host": 3,
@@ -31,28 +31,28 @@
     "LabelWish": 24,
     "Lbl_Position": 28,
     "Lbl_UserName": 27,
-    "NavBar": 14,
-    "NavBar Gallary": 15,
+    "NavBar": 4,
+    "NavBar Gallary": 5,
     "NavBar_1": 23,
     "NavBar_2": 32,
-    "Navbar_Current": 17,
-    "NavBar_Icon": 19,
-    "Navbar_label": 20,
-    "Navbar_Overlay": 18,
-    "page_Label": 13,
-    "rect_footer_back": 5,
-    "rect_head_back": 8,
+    "Navbar_Current": 7,
+    "NavBar_Icon": 9,
+    "Navbar_label": 10,
+    "Navbar_Overlay": 8,
+    "page_Label": 20,
+    "rect_footer_back": 12,
+    "rect_head_back": 15,
     "ScreenColleagues": 30,
     "ScreenMain": 21,
     "Subtitle3": 37,
     "Title3": 36,
-    "User_Image": 12,
+    "User_Image": 19,
     "UserImage": 26,
-    "UserName_Label": 11
+    "UserName_Label": 18
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/05/2024 06:28:18",
+  "HeaderLastSavedDateTimeUTC": "09/05/2024 06:29:33",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "2112e3ba-d35e-4580-931c-a3c3832e78ad": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/9418e351e51b4d2e968b0b66907ccf60\""
@@ -62,17 +62,17 @@
     "coforge logo": "7175bcbf-4591-4a18-873a-026ad79eba3f.svg"
   },
   "LocalResourceRootPaths": {
-    "coforge logo": "https://docserverpwaprodsin.blob.core.windows.net/7b7eebd8-ab7c-4b28-b394-d5f0602982b2-1/resource/Assets0Images07175bcbf-4591-4a18-873a-026ad79eba3f.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-09-05T06%3A25%3A07Z&ske=2024-09-06T06%3A40%3A07Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-09-06T06%3A40%3A07Z&sr=b&sp=r&sig=UpfOqHQbPGjBcGjlmXqp7DFmYKSUxFBU%2FLXQL5rGRfE%3D"
+    "coforge logo": "https://docserverpwaprodsin.blob.core.windows.net/f14ecb00-cebf-439a-9498-b8147157dca7-1/resource/Assets0Images07175bcbf-4591-4a18-873a-026ad79eba3f.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-09-05T06%3A28%3A58Z&ske=2024-09-06T06%3A43%3A58Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-09-06T06%3A43%3A58Z&sr=b&sp=r&sig=e6vR%2FoPN1EAEDAqcpe0QNBKp%2FV5K8dYeu7o2xnlrrhs%3D"
   },
   "OrderComponentMetadata": {
-    "24dfe3b63e8d4e55a885917283df15f9": 1,
-    "788b416235a64c4597c9be6d368fc581": 0,
-    "b67c0e9618cb4fdc95b835f6e7a72819": 2
+    "24dfe3b63e8d4e55a885917283df15f9": 2,
+    "788b416235a64c4597c9be6d368fc581": 1,
+    "b67c0e9618cb4fdc95b835f6e7a72819": 0
   },
   "OrderComponentTemplate": {
-    "24dfe3b63e8d4e55a885917283df15f9": 1,
-    "788b416235a64c4597c9be6d368fc581": 0,
-    "b67c0e9618cb4fdc95b835f6e7a72819": 2
+    "24dfe3b63e8d4e55a885917283df15f9": 2,
+    "788b416235a64c4597c9be6d368fc581": 1,
+    "b67c0e9618cb4fdc95b835f6e7a72819": 0
   },
   "OrderDataSource": {
     "CustomGallerySample": 1,
@@ -176,7 +176,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.4359504,
+    "AnalysisLoadTime": 0.5647855,
     "ControlCount": {
       "24dfe3b63e8d4e55a885917283df15f9": 3,
       "788b416235a64c4597c9be6d368fc581": 3,
@@ -190,7 +190,7 @@
       "rectangle": 2,
       "screen": 2
     },
-    "DeserializationLoadTime": 1.9001991
+    "DeserializationLoadTime": 1.5382311
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
